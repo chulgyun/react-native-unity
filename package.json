@@ -1,5 +1,5 @@
 {
-  "name": "@azesmway/react-native-unity",
+  "name": "@chulgyun/react-native-unity",
   "version": "1.0.12-alpha.1.0",
   "description": "React Native Unity",
   "main": "lib/commonjs/index",
