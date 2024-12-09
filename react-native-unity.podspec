@@ -45,21 +45,15 @@ Pod::Spec.new do |s|
   # The framework should be placed in the <YOUR_PROJECT>/unity/builds/ios folder.
   s.prepare_command =
   <<-CMD
-    ls 
-    echo '---'
-    ls ../
-    echo '---'
-    ls ../../
-    echo '---'
     ls ../../../
     echo '---'
-    ls ../../../..
+    ls ../../../unity
     echo '---'
-    ls ../../../../build
+    ls ../../../unity/builds
     echo '---'
-    ls ../../../../custom-build
+    ls ../../../unity/builds/ios
     echo '---'
-    cp -R ../../../../unity/builds/ios/ ios/
+    cp -R ../../../unity/builds/ios/ ios/
   CMD
 
   s.vendored_frameworks = ["ios/UnityFramework.framework"]
