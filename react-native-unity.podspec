@@ -46,7 +46,19 @@ Pod::Spec.new do |s|
   s.prepare_command =
   <<-CMD
     ls 
+    echo '---'
+    ls ../
+    echo '---'
+    ls ../../
+    echo '---'
+    ls ../../../
+    echo '---'
     ls ../../../..
+    echo '---'
+    ls ../../../../build
+    echo '---'
+    ls ../../../../custom-build
+    echo '---'
     cp -R ../../../../unity/builds/ios/ ios/
   CMD
 
