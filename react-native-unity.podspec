@@ -46,8 +46,8 @@ Pod::Spec.new do |s|
   s.prepare_command =
   <<-CMD
     ls 
-    ls ../unity
-    cp -R ../../../unity/builds/ios/ ios/
+    ls ../../../..
+    cp -R ../../../../unity/builds/ios/ ios/
   CMD
 
   s.vendored_frameworks = ["ios/UnityFramework.framework"]
