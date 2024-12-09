@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.prepare_command =
   <<-CMD
     ls 
-    ls ../
+    ls ../unity
     cp -R ../../../unity/builds/ios/ ios/
   CMD
 
